@@ -1,0 +1,16 @@
+<!ELEMENT Ferry (Monnaie,Meteo,Freetax)>
+<!ATTLIST Ferry name #PCDATA>
+<!ATTLIST Ferry voyageur #PCDATA>
+<!ELEMENT Monnaie (Cours)>
+<!ATTLIST Cours paysFrom #PCDATA>
+<!ATTLIST Cours paysTo #PCDATA>
+<!ELEMENT Meteo (Situation)>
+<!ELEMENT Situation (Dates)>
+<!ATTLIST Situation pays #PCDATA>
+<!ATTLIST Situation region #PCDATA>
+<!ELEMENT Dates (Jour)>
+<!ELEMENT Jour (#PCDATA)>
+<!ELEMENT Freetax (Alcools,Parfums,Tabacs)>
+<!ELEMENT Alcools (#PCDATA)>
+<!ELEMENT Parfums (#PCDATA)>
+<!ELEMENT Tabacs (#PCDATA)>
